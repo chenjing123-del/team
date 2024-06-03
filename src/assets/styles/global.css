@@ -43,33 +43,33 @@ parts的高度可以随便改。
     background-color: #0d6efd;
 }
 
+.part {
+    width: 100%;
+    position: relative;
+}
+
 #part1 {
     height: 200vh;
-    width: 100%;
     background-color: #86b7fe;
 }
 
 #part2 {
     height: 200vh;
-    width: 100%;
     background-color: #06357a;
 }
 
 #part3 {
     height: 200vh;
-    width: 100%;
     background-color: #084298;
 }
 
 #part4 {
     height: 200vh;
-    width: 100%;
     background-color: #04414d;
 }
 
 #part5 {
     height: 200vh;
-    width: 100%;
     background-color: #6610f2;
 }
 
