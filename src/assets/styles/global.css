@@ -1,0 +1,76 @@
+/*
+整体布局：
+
+最外层div，用弹性竖向。
+
+*存疑：是否需要拿一个div把parts套起来？
+
+里边直接套parts，每个parts一个div，position统一用relative。
+
+parts里直接写元素，元素的position都用absolute相对自己的part定位。
+
+parts的高度可以随便改。
+
+最上层留出封面的100vh；
+
+整个页面单位尽量都用vh和vw或百分比。
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#back-to-top-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 25px;
+}
+
+#outermost-box {
+    height: 1100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cover {
+    height: 100vh;
+    width: 100%;
+    background-color: #0d6efd;
+}
+
+#part1 {
+    height: 200vh;
+    width: 100%;
+    background-color: #86b7fe;
+}
+
+#part2 {
+    height: 200vh;
+    width: 100%;
+    background-color: #06357a;
+}
+
+#part3 {
+    height: 200vh;
+    width: 100%;
+    background-color: #084298;
+}
+
+#part4 {
+    height: 200vh;
+    width: 100%;
+    background-color: #04414d;
+}
+
+#part5 {
+    height: 200vh;
+    width: 100%;
+    background-color: #6610f2;
+}
+
+
