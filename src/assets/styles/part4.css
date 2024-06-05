@@ -1,0 +1,59 @@
+
+
+#part4>div{
+    position: absolute;
+}
+
+#p4_halo1{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 20vw;
+    top: 20vh;
+}
+
+#p4_halo2{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 60vw;
+    top: 20vh;
+}
+
+#p4_halo3{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 60vw;
+    top: 80vh;
+}
+
+#p4_halo4{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 30vw;
+    top: 80vh;
+}
+
+#p4_halo5{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 30vw;
+    top: 130vh;
+}
+
+#p4_halo6{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 60vw;
+    top: 130vh;
+}

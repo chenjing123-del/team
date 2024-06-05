@@ -1,0 +1,189 @@
+
+/*
+    svg的属性，定位模式、层级、边框（用于调试参考，完成后统一去除边框）统一写在css，
+    宽高和位置分个写在css，每个svg给一个单独标签，id按左右、上下顺序给
+
+    viewBox和preserveAspectRatio只能写在html的svg标签内
+
+    对于z_index，div统一20，svg统一10，但调试时为了让它在上面，暂调30
+*/
+
+/*大类标签*/
+#part1>div{
+    position: absolute;
+    z-index: 20;
+}
+
+#part1>svg{
+    position: absolute;
+
+    border: 5px solid white;
+    z-index: 30;
+
+}
+
+/*单个div标签*/
+#p1_title{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 6vw;
+    top: 15vh;
+}
+
+#p1_method1{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 40vw;
+    top: 15vh;
+}
+
+#p1_problem1{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 70vw;
+    top: 15vh;
+}
+
+#p1_method2{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 30vw;
+    top: 60vh;
+}
+
+#p1_problem2{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left:67vw;
+    top: 60vh;
+}
+
+#p1_method3{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 30vw;
+    top: 105vh;
+}
+
+#p1_problem3{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 60vw;
+    top: 105vh;
+}
+
+#p1_method4{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 30vw;
+    top: 150vh;
+}
+
+#p1_advantage{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 67vw;
+    top: 150vh;
+}
+
+/*单个svg标签*/
+
+#s1{
+    left:16vw;
+    top: 15vh;
+    width:34vw;
+    height:30vh;
+}
+#s1>path {
+    stroke-dasharray: 1000 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 40px;
+    stroke: black;
+    fill: none;
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+#s2{
+    left:50vw;
+    top: 15vh;
+    width:34vw;
+    height:30vh;
+}
+#s2>path {
+    stroke-dasharray: 1000 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 40px;
+    stroke: black;
+    fill: none;
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+#s3{
+    left:-8vw;
+    top: 30vh;
+    width:48vw;
+    height:90vh;
+}
+#s3>path {
+    stroke-dasharray: 1000 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 40px;
+    stroke: black;
+    fill: none;
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+#s4{
+    left:40vw;
+    top: 60vh;
+    width:37vw;
+    height:30vh;
+}
+#s4>path {
+    stroke-dasharray: 1000 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 40px;
+    stroke: black;
+    fill: none;
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+#s5{
+    left:-8vw;
+    top: 30vh;
+    width:48vw;
+    height:90vh;
+}
+#s5>path {
+    stroke-dasharray: 1000 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 40px;
+    stroke: black;
+    fill: none;
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+
+  @keyframes revealArc {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

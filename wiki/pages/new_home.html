@@ -1,26 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../../src/assets/styles/global.css">
-    <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part1.css">
-    <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part2.css">
-    <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part3.css">
-    <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part4.css">
-    <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part5.css">
-</head>
-<body>
-<script src="../../src/assets/js/homePageMonitor.js"></script>
-<script src="../../src/assets/js/buttons.js"></script>
-<div id="outermost-box">
-    <button onclick="backToTop()" id="back-to-top-button"></button>  <!-- 一键回到顶部 -->
-    <div id="cover"></div>
-    <div id="part1"></div>
-    <div id="part2"></div>
-    <div id="part3"></div>
-    <div id="part4"></div>
-    <div id="part5"></div>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="../../src/assets/styles/global.css">
+        <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part1.css">
+        <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part2.css">
+        <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part3.css">
+        <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part4.css">
+        <link rel="stylesheet" type="text/css" href="../../src/assets/styles/part5.css">
+        <style>
+            #1_title{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background-color: yellow;
+    left: 50px;
+    top: 50px;
+}
+
+        </style>
+    </head>
+    <body>
+        <script src="../../src/assets/js/homePageMonitor.js"></script>
+        <script src="../../src/assets/js/buttons.js"></script>
+        <div id="outermost-box">
+            <button onclick="backToTop()" id="back-to-top-button"></button>  <!-- 一键回到顶部 -->
+            <div id="cover"></div>
+            <div id="part1" class = "part">
+                <div id = "p1_title">title 16,30</div>
+                <div id = "p1_method1">method1 50 30</div>
+                <div id = "p1_problem1">problem1 80 30</div>
+                <div id = "p1_method2">method2 40 75</div>
+                <div id = "p1_problem2">problem2 77 75</div>
+                <div id = "p1_method3">method3 40 120</div>
+                <div id = "p1_problem3">problem3 70 120</div>
+                <div id = "p1_method4">method4 40 165</div>
+                <div id = "p1_advantage">advantage 77 165</div>
+
+                <svg id = "s1" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 0 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s2" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 0 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s3" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 50 0 L 50 30 Q 50 50 70 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s4" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 0 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s5" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 50 0 L 50 30 Q 50 50 70 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s6" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 50 0 L 50 30 Q 50 50 70 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s7" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 50 0 L 50 30 Q 50 50 70 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+                <svg id = "s8" viewBox="0 0 100 100" preserveAspectRatio="none" >
+                     <path vector-effect="non-scaling-stroke"
+                           d="M 50 0 L 50 30 Q 50 50 70 50 L 100 50"
+                           stroke="black" fill="none" >
+
+                     </path>
+                </svg>
+            </div>
+            <div id="part2" class = "part">
+                <div id = "p2_challenges">challenges</div>
+                <div id = "p2_cha1">cha1</div>
+                <div id = "p2_cha2">cha2</div>
+                <div id = "p2_other">other</div>
+                <div id = "p2_select">select</div>
+            </div>
+            <div id="part3" class = "part">
+                <div id = "p3_challenges">p3_challenges</div>
+                <div id = "p3_explore1">p3_explore1</div>
+                <div id = "p3_explore2">p3_explore2</div>
+                <div id = "p3_detail1">p3_detail1</div>
+                <div id = "p3_detail2">p3_detail2</div>
+                <div id = "p3_detail3">p3_detail3</div>
+            </div>
+            <div id="part4" class = "part">
+                <div id = "p4_halo1">p4_halo1</div>
+                <div id = "p4_halo2">p4_halo2</div>
+                <div id = "p4_halo3">p4_halo3</div>
+                <div id = "p4_halo4">p4_halo4</div>
+                <div id = "p4_halo5">p4_halo5</div>
+                <div id = "p4_halo6">p4_halo6</div>
+            </div>
+            <div id="part5" class = "part">
+                <div id = "respond">respond</div>
+            </div>
+        </div>
+    </body>
 </html>
+
+<style>
+
+</style>

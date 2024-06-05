@@ -1,0 +1,50 @@
+#part2>div{
+    position: absolute;
+}
+
+
+#p2_challenges{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 20vw;
+    top: 20vh;
+}
+
+#p2_cha1{
+    height: 50vh;
+    width: 35vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 10vw;
+    top: 70vh;
+}
+
+#p2_cha2{
+    height: 50vh;
+    width: 30vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 60vw;
+    top: 70vh;
+}
+
+#p2_other{
+    height: 40vh;
+    width: 30vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 5vw;
+    top: 140vh;
+}
+
+#p2_select{
+    height: 30vh;
+    width: 30vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 45vw;
+    top: 140vh;
+
+}

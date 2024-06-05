@@ -1,0 +1,59 @@
+#part3>div{
+    position: absolute;
+}
+
+
+#p3_challenges{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 50vw;
+    top: 20vh;
+}
+
+#p3_explore1{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 20vw;
+    top: 70vh;
+}
+
+#p3_explore2{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 60vw;
+    top: 70vh;
+}
+
+#p3_detail1{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 5vw;
+    top: 140vh;
+}
+
+#p3_detail2{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 40vw;
+    top: 140vh;
+}
+
+#p3_detail3{
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    left: 70vw;
+    top: 140vh;
+}
+
