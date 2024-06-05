@@ -1,4 +1,3 @@
-
 /*
     svg的属性，定位模式、层级、边框（用于调试参考，完成后统一去除边框）统一写在css，
     宽高和位置分个写在css，每个svg给一个单独标签，id按左右、上下顺序给
@@ -15,6 +14,7 @@
 #part1>div{
     position: absolute;
     z-index: 20;
+    opacity: 0;
 }
 
 #part1>svg{
@@ -39,6 +39,27 @@
     background-color: whitesmoke;
     left: 6vw;
     top: 15vh;
+    opacity: 0;
+}
+
+.bounceIn-now {
+    animation-duration: calc(1s * 0.75);
+    animation-name: bounceIn;
+    animation-fill-mode: forwards;
+}
+
+.bounceIn-1s {
+    animation-duration: calc(1s * 0.75);
+    animation-name: bounceIn;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.bounceIn-2s {
+    animation-duration: calc(1s * 0.75);
+    animation-name: bounceIn;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
 }
 
 #p1_method1{
@@ -114,6 +135,9 @@
 }
 
 /*单个svg标签*/
+#part1>svg>path {
+    opacity: 0;
+}
 
 #p1s1{
     left:16vw;
@@ -121,9 +145,6 @@
     width:34vw;
     height:30vh;
 }
-#p1s1>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
 
 #p1s2{
     left:50vw;
@@ -131,9 +152,6 @@
     width:34vw;
     height:30vh;
 }
-#p1s2>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
 
 #p1s3{
     left:-8vw;
@@ -141,9 +159,6 @@
     width:48vw;
     height:90vh;
 }
-#p1s3>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
 
 #p1s4{
     left:40vw;
@@ -151,9 +166,6 @@
     width:37vw;
     height:30vh;
 }
-#p1s4>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
 
 #p1s5{
     left:-8vw;
@@ -161,9 +173,6 @@
     width:48vw;
     height:120vh;
 }
-#p1s5>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
 
 #p1s6{
     left:40vw;
@@ -171,10 +180,6 @@
     width:37vw;
     height:30vh;
 }
-#p1s6>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
-
 
 #p1s7{
     left:-8vw;
@@ -182,9 +187,6 @@
     width:48vw;
     height:140vh;
 }
-#p1s7>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
 
 #p1s8{
     left:40vw;
@@ -192,12 +194,3 @@
     width:37vw;
     height:30vh;
 }
-#p1s8>path {
-    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
-  }
-
-  @keyframes revealArc {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }

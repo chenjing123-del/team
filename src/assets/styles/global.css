@@ -4,6 +4,7 @@
 最外层div，用弹性竖向。
 
 *存疑：是否需要拿一个div把parts套起来？
+*存疑：单位用v还是px？
 
 里边直接套parts，每个parts一个div，position统一用relative。
 
@@ -28,6 +29,7 @@ parts的高度可以随便改。
     right: 30px;
     bottom: 30px;
     border-radius: 25px;
+    z-index: 999;
 }
 
 #outermost-box {

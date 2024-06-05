@@ -2,6 +2,7 @@
 
 #part3>div{
     position: absolute;
+    opacity: 0;
 }
 
 
