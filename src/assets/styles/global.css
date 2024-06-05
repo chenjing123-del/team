@@ -35,6 +35,7 @@ parts的高度可以随便改。
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 #cover {

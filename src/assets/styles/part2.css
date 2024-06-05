@@ -1,11 +1,32 @@
-/**/
 
 
+
+/*
+    线条出现顺序：1先，2、3同时，4，再5、6同时
+
+*/
+
+/*大类标签*/
 #part2>div{
     position: absolute;
+    z-index: 20;
 }
 
+#part2>svg{
+    position: absolute;
+    /*border: 5px solid white;*/
+    z-index: 10;
+}
 
+#part2>svg>path{
+    stroke-dasharray: 3000 3000;
+    stroke-dashoffset: 3000;
+    stroke-width: 4vw;
+    stroke: black;
+    fill: none;
+}
+
+/*单个div标签*/
 #p2_challenges{
     height: 30vh;
     width: 20vw;
@@ -50,4 +71,77 @@
     left: 45vw;
     top: 140vh;
 
+}
+
+
+/*单个svg标签*/
+#p2s1{
+    left:32vw;
+    top: -35vh;
+    width:18vw;
+    height:60vh;
+}
+#p2s1>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+}
+
+#p2s2{
+    left:32vw;
+    top: -35vh;
+    width:90vw;
+    height:60vh;
+}
+#p2s2>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+}
+
+
+#p2s3{
+    left:15vw;
+    top: -35vh;
+    width:22vw;
+    height:60vh;
+}
+#p2s3>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+}
+
+#p2s4{
+    left:10vw;
+    top: 35vh;
+    width:92vw;
+    height:40vh;
+}
+#p2s4>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+}
+
+#p2s5{
+    left:5vw;
+    top: 95vh;
+    width:40vw;
+    height:65vh;
+}
+#p2s5>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+}
+
+#p2s6{
+    left:5vw;
+    top: 95vh;
+    width:80vw;
+    height:65vh;
+}
+#p2s6>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+}
+
+#p2s7{
+    left:45vw;
+    top: 95vh;
+    width:40vw;
+    height:65vh;
+}
+#p2s7>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
 }

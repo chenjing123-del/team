@@ -6,6 +6,9 @@
     viewBox和preserveAspectRatio只能写在html的svg标签内
 
     对于z_index，div统一20，svg统一10，但调试时为了让它在上面，暂调30
+
+
+    线条出现顺序：1~8依次出现
 */
 
 /*大类标签*/
@@ -16,10 +19,16 @@
 
 #part1>svg{
     position: absolute;
+    /*border: 5px solid white;*/
+    z-index: 10;
+}
 
-    border: 5px solid white;
-    z-index: 30;
-
+#part1>svg>path{
+    stroke-dasharray: 2500 2500;
+    stroke-dashoffset: 2500;
+    stroke-width: 4vw;
+    stroke: black;
+    fill: none;
 }
 
 /*单个div标签*/
@@ -106,81 +115,86 @@
 
 /*单个svg标签*/
 
-#s1{
+#p1s1{
     left:16vw;
     top: 15vh;
     width:34vw;
     height:30vh;
 }
-#s1>path {
-    stroke-dasharray: 1000 1000;
-    stroke-dashoffset: 1000;
-    stroke-width: 40px;
-    stroke: black;
-    fill: none;
+#p1s1>path {
     animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
   }
 
-#s2{
+#p1s2{
     left:50vw;
     top: 15vh;
     width:34vw;
     height:30vh;
 }
-#s2>path {
-    stroke-dasharray: 1000 1000;
-    stroke-dashoffset: 1000;
-    stroke-width: 40px;
-    stroke: black;
-    fill: none;
+#p1s2>path {
     animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
   }
 
-#s3{
+#p1s3{
     left:-8vw;
     top: 30vh;
     width:48vw;
     height:90vh;
 }
-#s3>path {
-    stroke-dasharray: 1000 1000;
-    stroke-dashoffset: 1000;
-    stroke-width: 40px;
-    stroke: black;
-    fill: none;
+#p1s3>path {
     animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
   }
 
-#s4{
+#p1s4{
     left:40vw;
     top: 60vh;
     width:37vw;
     height:30vh;
 }
-#s4>path {
-    stroke-dasharray: 1000 1000;
-    stroke-dashoffset: 1000;
-    stroke-width: 40px;
-    stroke: black;
-    fill: none;
+#p1s4>path {
     animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
   }
 
-#s5{
+#p1s5{
     left:-8vw;
-    top: 30vh;
+    top: 60vh;
     width:48vw;
-    height:90vh;
+    height:120vh;
 }
-#s5>path {
-    stroke-dasharray: 1000 1000;
-    stroke-dashoffset: 1000;
-    stroke-width: 40px;
-    stroke: black;
-    fill: none;
+#p1s5>path {
     animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
   }
 
+#p1s6{
+    left:40vw;
+    top: 105vh;
+    width:37vw;
+    height:30vh;
+}
+#p1s6>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+
+#p1s7{
+    left:-8vw;
+    top: 95vh;
+    width:48vw;
+    height:140vh;
+}
+#p1s7>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
+
+#p1s8{
+    left:40vw;
+    top: 150vh;
+    width:37vw;
+    height:30vh;
+}
+#p1s8>path {
+    animation: revealArc 1s linear forwards; /* 动画持续时间1秒，forwards保持动画结束状态 */
+  }
 
   @keyframes revealArc {
     to {
