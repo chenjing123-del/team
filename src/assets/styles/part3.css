@@ -1,11 +1,33 @@
-/**/
+/*线条动画顺序：1,2,3,4*/
+
+
+/*大类标签*/
 
 #part3>div{
     position: absolute;
     opacity: 0;
+    z-index: 20;
 }
 
+#part3>svg{
+    position: absolute;
+    /*border: 5px solid white;*/
+    z-index: 10;
+}
 
+#part3>svg>path{
+    stroke-dasharray: 100vw 100vw;
+    stroke-dashoffset: 100vw;
+    stroke-width: 4vw;
+    stroke: black;
+    stroke-linecap: round;
+    fill: none;
+    /*opacity: 0;*/
+    vector-effect: non-scaling-stroke;
+    animation: revealArc 2s linear forwards;
+}
+
+/*单个div标签*/
 #p3_challenges{
     height: 30vh;
     width: 20vw;
@@ -58,5 +80,35 @@
     background-color: whitesmoke;
     left: 70vw;
     top: 140vh;
+}
+
+/*单个svg标签*/
+
+#p3s1{
+    left:50vw;
+    top: -40vh;
+    width:20vw;
+    height:70vh;
+}
+
+#p3s2{
+    left:20vw;
+    top: 40vh;
+    width:60vw;
+    height:40vh;
+}
+
+#p3s3{
+    left:5vw;
+    top: 85vh;
+    width:55vw;
+    height:70vh;
+}
+
+#p3s4{
+    left:60vw;
+    top: 85vh;
+    width:30vw;
+    height:70vh;
 }
 

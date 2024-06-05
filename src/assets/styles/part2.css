@@ -20,12 +20,15 @@
 }
 
 #part2>svg>path{
-    stroke-dasharray: 3000 3000;
-    stroke-dashoffset: 3000;
+    stroke-dasharray: 100vw 100vw;
+    stroke-dashoffset: 100vw;
     stroke-width: 4vw;
     stroke: black;
+    stroke-linecap: round;
     fill: none;
     opacity: 0;
+    vector-effect: non-scaling-stroke;
+    animation: revealArc 2s linear forwards;
 }
 
 /*单个div标签*/

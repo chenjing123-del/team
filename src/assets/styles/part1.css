@@ -8,6 +8,10 @@
 
 
     线条出现顺序：1~8依次出现
+
+    动画持续时间统一写在path标签下，特殊需要调整的再单独写
+
+    线条长度改为用vw作单位，避免了在调整页面大小时动画速度、线条长度变化带来的问题
 */
 
 /*大类标签*/
@@ -24,11 +28,15 @@
 }
 
 #part1>svg>path{
-    stroke-dasharray: 2500 2500;
-    stroke-dashoffset: 2500;
+    stroke-dasharray: 100vw 100vw;
+    stroke-dashoffset: 100vw;
     stroke-width: 4vw;
     stroke: black;
+    stroke-linecap: round;
     fill: none;
+    vector-effect: non-scaling-stroke;
+    animation: revealArc 2s linear forwards;
+
 }
 
 /*单个div标签*/

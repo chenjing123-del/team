@@ -139,6 +139,9 @@ function handleScroll() {
 
         let p3_detail2 = document.getElementById('p3_detail2')
         p3_detail2.setAttribute('class', 'bounceIn-1s')
+
+        let p3_detail3 = document.getElementById('p3_detail3')
+        p3_detail3.setAttribute('class', 'bounceIn-2s')
     }
 
     // =================================     p4     =================================
