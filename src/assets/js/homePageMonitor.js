@@ -93,7 +93,7 @@ function handleScroll() {
         p2_challenges.setAttribute('class', 'bounceIn-now')
     }
 
-    if (currentDistance >= 3.3*windowHeight) {
+    if (currentDistance >= 3.1*windowHeight) {
         let p2s4 = document.getElementById('p2s4-path')
         p2s4.setAttribute('class', 'path-to-add-now')
 
@@ -110,6 +110,9 @@ function handleScroll() {
 
         let p2s6 = document.getElementById('p2s6-path')
         p2s6.setAttribute('class', 'path-to-add-now')
+
+        let p2s7 = document.getElementById('p2s7-path')
+        p2s7.setAttribute('class', 'path-to-add-now')
 
         let p2_other = document.getElementById('p2_other')
         p2_other.setAttribute('class', 'bounceIn-now')

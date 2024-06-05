@@ -35,7 +35,7 @@
     stroke-linecap: round;
     fill: none;
     vector-effect: non-scaling-stroke;
-    animation: revealArc 2s linear forwards;
+    /*animation: revealArc 2s linear forwards;*/
 
 }
 

@@ -45,11 +45,11 @@
 }
 
 .path-to-add-now {
-    animation: revealArc 3s linear forwards;
+    animation: revealArc 2s linear forwards;
 }
 
 .path-to-add-1s {
-    animation: revealArc 3s linear forwards;
+    animation: revealArc 2s linear forwards;
     animation-delay: 1s;
 }
 
