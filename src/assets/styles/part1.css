@@ -5,7 +5,7 @@
 
     viewBox和preserveAspectRatio只能写在html的svg标签内
 
-    对于z_index，div统一20，svg统一10，但调试时为了让它在上面，暂调30
+    对于z_index，div统一20，svg统一10，但调试时为了让它在上面，暂调30。
 */
 
 /*大类标签*/
