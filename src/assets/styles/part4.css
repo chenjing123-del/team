@@ -21,7 +21,7 @@
     fill: none;
     /*opacity: 0;*/
     vector-effect: non-scaling-stroke;
-    animation: revealArc 2s linear forwards;
+    /*animation: revealArc 2s linear forwards;*/
     /*动画统一在path_animation.css里面弄*/
 }
 

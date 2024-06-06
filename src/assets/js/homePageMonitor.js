@@ -124,11 +124,17 @@ function handleScroll() {
     // =================================     p3     =================================
 
     if (currentDistance >= 4.8*windowHeight) {
+        let p3s1 = document.getElementById('p3s1-path')
+        p3s1.setAttribute('class', 'path-to-add-now')
+
         let p3_challenges = document.getElementById('p3_challenges')
         p3_challenges.setAttribute('class', 'bounceIn-now')
     }
 
     if (currentDistance >= 5.2*windowHeight) {
+        let p3s2 = document.getElementById('p3s2-path')
+        p3s2.setAttribute('class', 'path-to-add-now')
+
         let p3_explore1 = document.getElementById('p3_explore1')
         p3_explore1.setAttribute('class', 'bounceIn-now')
 
@@ -136,12 +142,18 @@ function handleScroll() {
         p3_explore2.setAttribute('class', 'bounceIn-1s')
     }
 
-    if (currentDistance >= 5.8*windowHeight) {
+    if (currentDistance >= 5.6*windowHeight) {
+        let p3s3 = document.getElementById('p3s3-path')
+        p3s3.setAttribute('class', 'path-to-add-now')
+
         let p3_detail1 = document.getElementById('p3_detail1')
         p3_detail1.setAttribute('class', 'bounceIn-now')
 
         let p3_detail2 = document.getElementById('p3_detail2')
         p3_detail2.setAttribute('class', 'bounceIn-1s')
+
+        let p3s4 = document.getElementById('p3s4-path')
+        p3s4.setAttribute('class', 'path-to-add-1s')
 
         let p3_detail3 = document.getElementById('p3_detail3')
         p3_detail3.setAttribute('class', 'bounceIn-2s')
@@ -149,25 +161,43 @@ function handleScroll() {
 
     // =================================     p4     =================================
 
-    if (currentDistance >= 6.6*windowHeight) {
+    if (currentDistance >= 6.4*windowHeight) {
+        let p4s1 = document.getElementById('p4s1-path')
+        p4s1.setAttribute('class', 'path-to-add-now')
+
         let p4_halo1 = document.getElementById('p4_halo1')
         p4_halo1.setAttribute('class', 'bounceIn-now')
+
+        let p4s2 = document.getElementById('p4s2-path')
+        p4s2.setAttribute('class', 'path-to-add-now')
 
         let p4_halo2 = document.getElementById('p4_halo2')
         p4_halo2.setAttribute('class', 'bounceIn-1s')
     }
 
     if (currentDistance >= 7.2*windowHeight) {
+        let p4s3 = document.getElementById('p4s3-path')
+        p4s3.setAttribute('class', 'path-to-add-now')
+
         let p4_halo3 = document.getElementById('p4_halo3')
         p4_halo3.setAttribute('class', 'bounceIn-now')
+
+        let p4s4 = document.getElementById('p4s4-path')
+        p4s4.setAttribute('class', 'path-to-add-1s')
 
         let p4_halo4 = document.getElementById('p4_halo4')
         p4_halo4.setAttribute('class', 'bounceIn-1s')
     }
 
     if (currentDistance >= 7.8*windowHeight) {
+        let p4s5 = document.getElementById('p4s5-path')
+        p4s5.setAttribute('class', 'path-to-add-now')
+
         let p4_halo5 = document.getElementById('p4_halo5')
         p4_halo5.setAttribute('class', 'bounceIn-now')
+
+        let p4s6 = document.getElementById('p4s6-path')
+        p4s6.setAttribute('class', 'path-to-add-1s')
 
         let p4_halo6 = document.getElementById('p4_halo6')
         p4_halo6.setAttribute('class', 'bounceIn-1s')

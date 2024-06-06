@@ -50,26 +50,6 @@
     opacity: 0;
 }
 
-.bounceIn-now {
-    animation-duration: calc(1s * 0.75);
-    animation-name: bounceIn;
-    animation-fill-mode: forwards;
-}
-
-.bounceIn-1s {
-    animation-duration: calc(1s * 0.75);
-    animation-name: bounceIn;
-    animation-fill-mode: forwards;
-    animation-delay: 0.3s;
-}
-
-.bounceIn-2s {
-    animation-duration: calc(1s * 0.75);
-    animation-name: bounceIn;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-
 #p1_method1{
     height: 30vh;
     width: 20vw;
