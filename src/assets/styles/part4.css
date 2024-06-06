@@ -3,9 +3,29 @@
 #part4>div{
     position: absolute;
     opacity: 0;
+    z-index: 20;
 }
 
+#part4>svg{
+    position: absolute;
+    /*border: 5px solid white;*/
+    z-index: 10;
+}
 
+#part4>svg>path{
+    stroke-dasharray: 100vw 100vw;
+    stroke-dashoffset: 100vw;
+    stroke-width: 4vw;
+    stroke: black;
+    stroke-linecap: round;
+    fill: none;
+    /*opacity: 0;*/
+    vector-effect: non-scaling-stroke;
+    animation: revealArc 2s linear forwards;
+    /*动画统一在path_animation.css里面弄*/
+}
+
+/*单个div标签*/
 
 #p4_halo1{
     height: 30vh;
@@ -59,4 +79,47 @@
     background-color: whitesmoke;
     left: 60vw;
     top: 130vh;
+}
+
+/*单个svg标签*/
+#p4s1{
+    left:5vw;
+    top: -40vh;
+    width:85vw;
+    height:70vh;
+}
+
+#p4s2{
+    left:30vw;
+    top: 20vh;
+    width:40vw;
+    height:30vh;
+}
+
+#p4s3{
+    left:70vw;
+    top: 20vh;
+    width:25vw;
+    height:90vh;
+}
+
+#p4s4{
+    left:40vw;
+    top: 80vh;
+    width:30vw;
+    height:30vh;
+}
+
+#p4s5{
+    left:5vw;
+    top: 80vh;
+    width:30vw;
+    height:80vh;
+}
+
+#p4s6{
+    left:40vw;
+    top: 130vh;
+    width:30vw;
+    height:30vh;
 }
