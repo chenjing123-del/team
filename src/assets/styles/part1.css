@@ -60,14 +60,14 @@
     animation-duration: calc(1s * 0.75);
     animation-name: bounceIn;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 .bounceIn-2s {
     animation-duration: calc(1s * 0.75);
     animation-name: bounceIn;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 #p1_method1{
