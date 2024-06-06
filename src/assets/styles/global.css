@@ -37,13 +37,13 @@ parts的高度可以随便改。
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #cover {
     height: 100vh;
     width: 100%;
-    background-color: #0d6efd;
+    background-color: #3B5C8D;
 }
 
 .part {
@@ -53,27 +53,29 @@ parts的高度可以随便改。
 
 #part1 {
     height: 200vh;
-    background-color: #86b7fe;
+    background-color: #3B5C8D;
 }
 
 #part2 {
     height: 200vh;
-    background-color: #06357a;
+    background-color: #3B5C8D;
 }
 
 #part3 {
     height: 200vh;
-    background-color: #084298;
+    background-color: #3B5C8D;
 }
 
 #part4 {
-    height: 200vh;
-    background-color: #04414d;
+    height: 145vh;
+    background-color: #3B5C8D;
 }
 
 #part5 {
-    height: 200vh;
-    background-color: #6610f2;
+    height: 255vh;
+    background-color: #3B5C8D;
+    overflow: hidden;
+
 }
 
 

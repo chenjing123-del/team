@@ -1,4 +1,11 @@
 /*。*/
+#part5>svg{
+    position: absolute;
+    /*border: 5px solid red;*/
+    box-sizing: border-box;
+    z-index: 10;
+}
+
 
 #respond{
     position: absolute;
@@ -9,5 +16,68 @@
     left: 10vw;
     top: 20vh;
     opacity: 0;
+    z-index: 20;
 }
 
+/*#part5>svg>path{*/
+/*    stroke-dasharray: 100vw 100vw;*/
+/*    stroke-dashoffset: 100vw;*/
+/*    stroke-width: 100vw;*/
+/*    stroke: #6610f2;*/
+/*    !*stroke-linecap: round;*!*/
+/*    fill: none;*/
+/*    !*opacity: 0;*!*/
+/*    vector-effect: non-scaling-stroke;*/
+/*    animation: revealArc 2s linear forwards;*/
+/*    !*动画统一在path_animation.css里面弄*!*/
+/*}*/
+
+#p5s1{
+    left:0;
+    top: 0;
+    width:100%;
+    height:255vh;
+    z-index: 10;
+    opacity: 0;
+
+    animation-duration: 5s;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#p5cover{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 255vh;
+    position: absolute;
+    /*border: 15px solid red;*/
+    background-color: #3B5C8D;
+    z-index: 15;
+    transform: translateY(0);
+    opacity: 1;
+
+    animation-duration: 5s;
+    animation-name: cover_move;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes cover_move {
+    0%{
+
+    }
+    100%{
+        transform: translateY(255vh);
+    }
+}
+
+@keyframes appear {
+    0%{
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
