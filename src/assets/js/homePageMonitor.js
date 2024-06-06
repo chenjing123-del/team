@@ -153,6 +153,7 @@ function handleScroll() {
         p3_detail2.setAttribute('class', 'bounceIn-1s')
 
         let p3s4 = document.getElementById('p3s4-path')
+        // console.log(p3s4)
         p3s4.setAttribute('class', 'path-to-add-1s')
 
         let p3_detail3 = document.getElementById('p3_detail3')
@@ -205,9 +206,14 @@ function handleScroll() {
 
     // =================================     p5     =================================
 
-    if (currentDistance >= 8.5*windowHeight) {
-        let respond = document.getElementById('respond')
-        respond.setAttribute('class', 'bounceIn-now')
+    if (currentDistance >= 8*windowHeight) {
+        let p5s1 = document.getElementById('p5s1')
+        console.log(p5s1)
+        p5s1.setAttribute('class', 'p5s1-to-add')
+
+        let p5cover = document.getElementById('p5cover')
+        p5cover.setAttribute('class', 'p5cover-to-add')
+
     }
 }
 

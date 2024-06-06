@@ -85,3 +85,31 @@
     animation: revealArc 1s linear forwards;
     animation-delay: 1s;
 }
+
+@keyframes cover_move {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 255vh;
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.p5s1-to-add {
+    animation-delay: 1s;
+    animation: appear 5s forwards linear;
+}
+
+.p5cover-to-add {
+    animation-delay: 1s;
+    animation: cover_move 5s forwards linear;
+}
