@@ -1,0 +1,380 @@
+.navBar.colored {
+    background-color: #ffffff;
+}
+@media screen and (max-width: 700px) {
+        .navBar {
+            display: none !important;
+        }
+        .cellNav {
+            display: block !important;
+        }
+    }
+@media screen and (min-width: 700px) {
+        .cellNav {
+            display: none !important;
+        }
+    }
+.navBar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #242C4B;
+    padding: 8px 0px;
+    z-index: 999999;
+    box-shadow: 0px 2px 19px #00000059;
+    transition: 0.4s;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #fff;
+}
+body {
+    text-align: center;
+}
+body {
+    font-family: 'Quicksand' !important;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.navBarItems {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    padding-right: 20px;
+}
+.navBarIcon {
+    width: 200px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top:-0.8%;
+
+}
+.navBarContentItem {
+    height: 100%;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    padding: 0 15px;
+    min-width: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.navBar .navBarContentItem{
+    cursor: pointer;
+  transition: font-size 0.5s ease;
+  position: relative;
+}
+.navBar .navBarContentItem .textNavbar {
+    transition: font-size 0.3s ease;
+}
+.navBar .navBarContentItem:hover .textNavbar {
+            font-size: 1.2em;
+            color:#58CEa4;
+        }
+.navBarContentItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #58CEa4;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+.navBar .navBarContentItem:hover.textNavbar{
+    color:#58CEa4;
+}
+.navBar .navBarContentItem:hover::after {
+    transform: scaleX(1); 
+}
+.navBar .navBarContentItem {
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px; 
+}
+.navBar .navBarContentItem:last-child {
+  margin-right: 0;
+}
+a {
+    background-color: transparent;
+}
+.navBarContent {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: calc(100% - 200px);
+    height: 100%;
+    gap: 20px;
+    margin-top: 1.2%;
+}
+.navBar.colored .navBarContent .navBarContentItem {
+    color: var(--colorWht) !important;
+}
+.textNavbar {
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: medium;
+    color: #ffffff;
+}
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox {
+    background-color: var(--colorENT) !important;
+}
+@media screen and (max-width: 1250px) {
+    .navBarContentItem.navExpand .expandBox {
+        width: 90vw;
+    }
+}
+.navBarContentItem.navExpand .expandBox {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, 0%);
+    background-color: #242C4B;
+    width: 90vw;
+    height: fit-content;
+    opacity: 1;
+    cursor: default;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    overflow: clip;
+    z-index: 999998;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: max-height 1.3s, z-index 0s;
+    box-shadow: -1px 15px 14px #00000036;
+}
+.navBar .textNavbar:not(:hover) .expandBox {
+  transition: transform 5s ease-in;
+}
+.expandBox::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #58CEa4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.38s;
+}
+.expandBox.Underline::after {
+    transform: translateX(-50%) scaleX(1);
+}
+.megaMenuItem {
+    width: 45%;
+    max-width: 300px;
+    aspect-ratio: 3 / 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none !important;
+    min-height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+}
+
+.megaText::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #58CEa4;
+    bottom: 0px;  /* 可以根据需要调整 */
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+.navBar .megaMenuItem:hover .megaTitle{
+    color:#58CEa4;
+}
+.navBar .megaMenuItem:hover .megaText{
+    color:#58CEa4;
+}
+.navBar .megaMenuItem:hover .megaText::after {
+    transform: scaleX(1);
+}
+
+.megaMenuItem img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; 
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-right: 5%;
+}
+.megaTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.megaText {
+            margin: 0;
+}
+.cellNav {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    height: fit-content;
+    margin-right: 0;
+    margin-left: auto;
+    overflow-x: hidden;
+    overflow-x: clip;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.cellNavTop {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 99999;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    align-items: center;
+    box-shadow: 0 6px 14px 5px rgb(0 0 0 / 33%);
+}
+.toplogo {
+    height: 77%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+.topclose {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.openCloseNav {
+    width: 80%;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    z-index: 99998;
+    top: 0;
+    transition: 0.3s;
+    transform: translateX(100%);
+}
+.cellNavRight {
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 99998;
+    box-shadow: 0 6px 14px 5px rgb(0 0 0 / 33%);
+}
+.navLink {
+    text-decoration: none;
+    transition: 0.3s;
+    justify-content: left;
+    text-align: left;
+}
+.navLink::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #5bc5ab;
+    transition: width .3s;
+}
+.navText {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 3.7vh;
+    font-weight: 700;
+    transition: 0.3s;
+    justify-content: left;
+    text-align: left;
+    width: max-content;
+    min-width: 100%;
+}
+.navText.expandLink::after {
+    content: '>';
+    margin-left: 20px;
+}
+.expandNav {
+    max-width: 0px;
+    transition: 0.7s;
+}
+.secondNavText {
+    color: #000 !important;
+    font-size: 3.7vh !important;
+}
